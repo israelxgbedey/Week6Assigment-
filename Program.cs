@@ -52,44 +52,6 @@ public interface ICanParseExtensions
     List<string> CanParseExtensions { get; }
 }
 
-public class CsvFileParser : IFileParser, ICanParseExtensions
-{
-    public List<string> CanParseExtensions => new List<string> { ".csv" };
-
-    public void ParseFile(string filePath)
-    {
-        try
-        {
-            using (StreamReader reader = new StreamReader(filePath))
-            {
-                int lineCount = 1;
-                string outputFilePath = Path.ChangeExtension(filePath, "_out.txt");
-
-                using (StreamWriter writer = new StreamWriter(outputFilePath, false)) // Overwrite the existing file
-                {
-                    while (!reader.EndOfStream)
-                    {
-                        string line = reader.ReadLine();
-                        string[] fields = line.Split(',');
-
-                        if (fields.Length >= 6)
-                        {
-                            string output = $"Line#{lineCount} :Field#1={fields[0]} ==> Field#2={fields[1]} ==> Field#3={fields[2]} ==> Field#4={fields[3]} ==> Field#5={fields[4]} ==> Field#6={fields[5]}";
-                            writer.WriteLine(output);
-                            lineCount++;
-                        }
-                    }
-                }
-            }
-            Console.WriteLine($"CSV file processed successfully: {filePath}");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error processing CSV file: {ex.Message}");
-        }
-    }
-}
-
 public class JsonFileParser : IFileParser, ICanParseExtensions
 {
     public List<string> CanParseExtensions => new List<string> { ".json" };
@@ -176,11 +138,10 @@ public class XmlFileParser : IFileParser, ICanParseExtensions
     }
 }
 
-public class YourFileParserEngine : FileParserEngine
+public class myFileParserEngine : FileParserEngine
 {
-    public YourFileParserEngine()
+    public myFileParserEngine()
     {
-        parsers.Add(new CsvFileParser());
         parsers.Add(new JsonFileParser());
         parsers.Add(new XmlFileParser());
     }
@@ -196,7 +157,7 @@ class Program
             "SampleJSON.json"
         };
 
-        var parserEngine = new YourFileParserEngine();
+        var parserEngine = new myFileParserEngine();
 
         for (int i = 0; i < filesToProcess.Count; i++)
         {
