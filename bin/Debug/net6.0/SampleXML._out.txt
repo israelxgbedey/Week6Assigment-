@@ -1,0 +1,2 @@
+Line#1 :Field#1=Apple ==> Field#2=$4.00 ==> Field#3=bag
+Line#2 :Field#1=Orange ==> Field#2=$.99 ==> Field#3=lbs

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "31+t2RDmT38/fIB1P6Iopd7id0qzJGieHaeLP9hr6BSZntKPSGTmxaolZHn+ijG+E96G7dmhrzRc1OvQqe/svA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\markg\\source\\repos\\week5Assigment\\week5Assigment.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\markg\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

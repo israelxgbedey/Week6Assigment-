@@ -1,0 +1,17 @@
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\week5Assigment.csproj.AssemblyReference.cache
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\week5Assigment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\week5Assigment.AssemblyInfoInputs.cache
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\week5Assigment.AssemblyInfo.cs
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\week5Assigment.csproj.CoreCompileInputs.cache
+C:\Users\markg\source\repos\week5Assigment\bin\Debug\net6.0\week5Assigment.exe
+C:\Users\markg\source\repos\week5Assigment\bin\Debug\net6.0\week5Assigment.deps.json
+C:\Users\markg\source\repos\week5Assigment\bin\Debug\net6.0\week5Assigment.runtimeconfig.json
+C:\Users\markg\source\repos\week5Assigment\bin\Debug\net6.0\week5Assigment.dll
+C:\Users\markg\source\repos\week5Assigment\bin\Debug\net6.0\week5Assigment.pdb
+C:\Users\markg\source\repos\week5Assigment\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\week5Assigment.csproj.CopyComplete
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\week5Assigment.dll
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\refint\week5Assigment.dll
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\week5Assigment.pdb
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\week5Assigment.genruntimeconfig.cache
+C:\Users\markg\source\repos\week5Assigment\obj\Debug\net6.0\ref\week5Assigment.dll

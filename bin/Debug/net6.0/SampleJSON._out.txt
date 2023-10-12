@@ -1,0 +1,24 @@
+This is the JSON file processing output:
+Line#1 :Field#firstName=John
+Line#2 :Field#lastName=Doe
+Line#3 :Field#isEnrolled=True
+Line#4 :Field#YearsEnrolled=2
+Line#5 :Field#address1={
+  "streetAddress": "916 S. Wabash",
+  "city": "Chicago",
+  "state": "IL",
+  "postalCode": "60000"
+}
+Line#6 :Field#address2=
+Line#7 :Field#phoneNumbers=[
+  {
+    "type": "Mobile",
+    "number": "999-123-1234",
+    "CanContact": true
+  },
+  {
+    "type": "Home",
+    "number": "999-789-6789",
+    "CanContact": true
+  }
+]
