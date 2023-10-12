@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Xml;
 using Newtonsoft.Json.Linq;
 
+// Interface for all file parsers
 public interface IFileParser
 {
     void ParseFile(string filePath);
 }
 
+// Abstract class for the file parser engine
 public abstract class FileParserEngine
 {
     protected List<IFileParser> parsers;
@@ -18,6 +20,7 @@ public abstract class FileParserEngine
         parsers = new List<IFileParser>();
     }
 
+    // Process a list of files using the registered parsers
     public void ProcessFiles(List<string> filePaths)
     {
         foreach (var filePath in filePaths)
@@ -26,12 +29,14 @@ public abstract class FileParserEngine
             {
                 string fileExtension = Path.GetExtension(filePath).ToLower();
 
+                // Iterate over the registered parsers
                 foreach (var parser in parsers)
                 {
                     if (parser is ICanParseExtensions parserWithExtensions)
                     {
                         if (parserWithExtensions.CanParseExtensions.Contains(fileExtension))
                         {
+                            // Use the parser to process the file
                             parser.ParseFile(filePath);
                             Console.WriteLine($"File processed successfully: {filePath}");
                             break;
@@ -47,11 +52,13 @@ public abstract class FileParserEngine
     }
 }
 
+// Interface for parsers that can specify the file extensions they can handle
 public interface ICanParseExtensions
 {
     List<string> CanParseExtensions { get; }
 }
 
+// JSON file parser
 public class JsonFileParser : IFileParser, ICanParseExtensions
 {
     public List<string> CanParseExtensions => new List<string> { ".json" };
@@ -97,9 +104,9 @@ public class JsonFileParser : IFileParser, ICanParseExtensions
             }
         }
     }
-
 }
 
+// XML file parser
 public class XmlFileParser : IFileParser, ICanParseExtensions
 {
     public List<string> CanParseExtensions => new List<string> { ".xml" };
@@ -138,6 +145,7 @@ public class XmlFileParser : IFileParser, ICanParseExtensions
     }
 }
 
+// Custom file parser engine
 public class myFileParserEngine : FileParserEngine
 {
     public myFileParserEngine()
