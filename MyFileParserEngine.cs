@@ -32,7 +32,7 @@ namespace week5Assigment
             }
             else
             {
-                Console.WriteLine($"File not found: {filePath}");
+                Console.WriteLine($"Files not found: {filePath}");
             }
         }
 
